@@ -12,9 +12,10 @@ const BottomRow = () => {
     
     <div className="bottomRow">
       {down === 4 && (<p className="lastChance"> Last Chance!</p>)}
-      {down === 4 & yard === 26 && (window.location.replace("https://youtu.be/2usY3hJk_tc?t=20"))}
+      
       <div className="down">
         <h3 className="down__title">Down</h3>
+        <p>{down === 4 & yard === 26 && (window.location.replace("https://youtu.be/2usY3hJk_tc?t=20"))}</p>
         <div className="down__value">{down}</div>
       </div>
       <div className="toGo">

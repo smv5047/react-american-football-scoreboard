@@ -66,3 +66,7 @@ button:active {
   display: flex;
   justify-content: center;
 }
+
+.down p {
+  visibility: hidden;
+}
