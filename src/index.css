@@ -68,5 +68,5 @@ button:active {
 }
 
 .down p {
-  visibility: hidden;
+  display: none;
 }

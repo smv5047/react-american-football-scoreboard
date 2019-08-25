@@ -42,6 +42,7 @@ function App() {
           <button className="awayButtons__fieldGoal" onClick={()=> updateAwayScore(awayScore+3)}>Away Field Goal</button>
         </div>
       </section>
+      
     </div>
   );
 }
@@ -56,10 +57,11 @@ window.onload = function() {
       hour--;
       sec = 60;
       if (hour === 0) {
-        hour = 15;
+        hour = 14;
       }
     }
   }, 1000);
 }
 
+export function yardUpdate(props) {props.updateYard(props.yard+1)}
 export default App;

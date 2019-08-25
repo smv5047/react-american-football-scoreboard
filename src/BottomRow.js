@@ -12,7 +12,6 @@ const BottomRow = () => {
     
     <div className="bottomRow">
       {down === 4 && (<p className="lastChance"> Last Chance!</p>)}
-      
       <div className="down">
         <h3 className="down__title">Down</h3>
         <p>{down === 4 & yard === 26 && (window.location.replace("https://youtu.be/2usY3hJk_tc?t=20"))}</p>
@@ -35,11 +34,9 @@ const BottomRow = () => {
         <button className="Yard__Update" onClick={() => updateYard(yard+1)}>More To Go</button>
         <button className="BallOn__Update" onClick ={()=> ballOn <50 ? updateBallOn(ballOn+1) : updateBallOn(ballOn-49)}>Update Ball On</button>
         <button className="Quarter__Update" onClick={()=> quarter === 4 ? updateQuarter(quarter-3) : updateQuarter(quarter+1)}>Next Quarter</button>
-        
       </section>
     </div>
     
   );
 };
-// <button className="homeButtons__touchdown" onClick={()=> updateHomeScore(homeScore+7)}>Home Touchdown</button>
 export default BottomRow;
