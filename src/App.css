@@ -34,11 +34,11 @@
 }
 
 .home {
-  background-color: #656565;
+  background-color: #004C54;
 }
 
 .away {
-  background-color: #af750a;
+  background-color: #203731;
 }
 
 .home__name,
@@ -75,9 +75,11 @@
 
 .bottomRow {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   place-items: center;
   height: 20rem;
+  margin-top: 20px;
 }
 
 .down,
@@ -106,6 +108,11 @@
   border: 1px solid white;
 }
 
+section.buttons {
+  width: 66%;
+  justify-content: space-around;
+}
+
 .buttons {
   width: 50%;
   margin: 0 auto;
@@ -116,7 +123,27 @@
 .homeButtons__touchdown,
 .homeButtons__fieldGoal,
 .awayButtons__touchdown,
-.awayButtons__fieldGoal {
+.awayButtons__fieldGoal,
+.Quarter__Update,
+.Yard__Update,
+.Down__Update,
+.BallOn__Update {
   margin: 1rem;
   border-radius: 4px;
+  border: 1px solid white;
+}
+
+.Quarter__Update,
+.Yard__Update,
+.Down__Update,
+.BallOn__Update {
+  border: 1px solid white;
+  width: 20%;
+}
+
+.newButtons {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
